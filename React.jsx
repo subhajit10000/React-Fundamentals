@@ -143,7 +143,6 @@ export default function ReactFundamentalsNotes() {
   Only call hooks at the top level of function components. Do not call hooks inside loops,
   conditions, or nested functions. Only call hooks from React components or custom hooks.
   */
-
   return (
     <div>
       <h2>React Fundamentals Notes</h2>
