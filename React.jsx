@@ -117,11 +117,6 @@ export default function ReactFundamentalsNotes() {
     return <button className={theme}>Theme is {theme}</button>;
   }
 
-  /*
-    10. Unidirectional Data Flow
-  Data flows down via props. To update parent state, pass callbacks down.
-  Child calls the callback to notify parent of changes.
-  */
   function Parent() {
     const [message, setMessage] = useState('');
     return <Child onMessage={setMessage} />;
@@ -131,18 +126,6 @@ export default function ReactFundamentalsNotes() {
     return <button onClick={() => onMessage('Hello from child')}>Send</button>;
   }
 
-  /*
-    11. Virtual DOM
-  React keeps a lightweight copy of the DOM in memory. When state changes, it compares
-  the new virtual DOM to the old one, then updates only what changed in the real DOM.
-  This makes updates fast.
-  */
-
-  /*
-    12. Rules of Hooks
-  Only call hooks at the top level of function components. Do not call hooks inside loops,
-  conditions, or nested functions. Only call hooks from React components or custom hooks.
-  */
   return (
     <div>
       <h2>React Fundamentals Notes</h2>
