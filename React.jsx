@@ -1,29 +1,14 @@
 import React, { useState, useEffect, useContext, createContext } from 'react';
 
 export default function ReactFundamentalsNotes() {
-  /* 
-  React Fundamentals in JSX
-  
-    1. Components
-  Components are reusable pieces of UI. They are JavaScript functions that return JSX.
-  A component name must start with a capital letter.
-  */
+
   function Greeting({ name }) {
     return <h1>Hello {name}</h1>;
   }
 
-  /* 
-    2. JSX
-  JSX is a syntax extension for JavaScript. It looks like HTML but gets compiled to React.createElement calls.
-  You can embed any JavaScript expression inside curly braces.
-  */
+  
   const element = <p>2 plus 2 equals {2 + 2}</p>;
 
-  /*
-    3. Props
-  Props are inputs to components. They are read only and passed from parent to child.
-  Props let you configure a component without changing its code.
-  */
   function UserCard({ username, age }) {
     return (
       <div>
