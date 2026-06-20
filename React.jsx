@@ -33,11 +33,6 @@ export default function ReactFundamentalsNotes() {
     );
   }
 
-  /*
-    4. State
-  State is data that changes over time. useState returns the current value and a setter function.
-  When state changes, React re-renders the component.
-  */
   function Counter() {
     const [count, setCount] = useState(0);
     
@@ -49,10 +44,6 @@ export default function ReactFundamentalsNotes() {
     );
   }
 
-  /*
-    5. Events
-  React uses camelCase for events like onClick, onChange. You pass a function, not a string.
-  */
   function ClickButton() {
     function handleClick() {
       console.log('Button clicked');
@@ -60,10 +51,6 @@ export default function ReactFundamentalsNotes() {
     return <button onClick={handleClick}>Click me</button>;
   }
 
-  /*
-    6. Conditional Rendering
-  Use ternary operators or logical && to render UI based on state or props.
-  */
   function LoginMessage({ isLoggedIn }) {
     return (
       <div>
