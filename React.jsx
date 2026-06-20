@@ -73,10 +73,6 @@ export default function ReactFundamentalsNotes() {
     );
   }
 
-  /*
-    7. Lists and Keys
-  Use map to render arrays. Each item needs a unique key prop so React can track changes.
-  */
   function FruitList() {
     const fruits = ['Apple', 'Banana', 'Mango'];
     return (
@@ -88,12 +84,6 @@ export default function ReactFundamentalsNotes() {
     );
   }
 
-  /*
-    8. useEffect
-  useEffect runs side effects like data fetching or subscriptions.
-  It runs after render. The dependency array controls when it runs again.
-  Empty array means run once on mount. No array means run after every render.
-  */
   function Timer() {
     const [seconds, setSeconds] = useState(0);
 
@@ -105,11 +95,6 @@ export default function ReactFundamentalsNotes() {
     return <p>Seconds: {seconds}</p>;
   }
 
-  /*
-    9. useContext
-  Context shares data without passing props through every level.
-  Create context, wrap components in Provider, and useContext to read it.
-  */
   const ThemeContext = createContext('light');
 
   function ThemedButton() {
